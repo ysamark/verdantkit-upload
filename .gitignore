@@ -1,0 +1,7 @@
+node_modules
+
+__screenshots__
+/coverage
+
+dist/**/*
+!dist/.gitkeep

@@ -10,7 +10,6 @@
   "scripts": {
     "prebuild": "tsc",
     "build": "babel src --config-file \"./babel.config.js\" --extensions \".ts\" --out-dir dist --copy-files --no-copy-ignored",
-    "postbuild": "node vendor/dist-package-files.js",
     "test": "cross-env NODE_ENV=test vitest",
     "lint": "eslint --ext .js src/"
   },

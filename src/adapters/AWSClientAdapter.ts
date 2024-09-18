@@ -10,6 +10,12 @@ type AWSClientAdapterConfig = {
 };
 
 export class AWSClientAdapter extends UploadClientAdapter<AWSClientAdapterConfig> {
+  async uploadFiles(
+    formData: FormData
+  ): Promise<Nullish<Array<UploadedImage>>> {
+    throw new Error("Method not implemented.");
+  }
+
   async uploadFile(formData: FormData): Promise<Nullish<UploadedImage>> {
     throw new Error("Method not implemented.");
   }

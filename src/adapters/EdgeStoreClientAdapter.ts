@@ -9,6 +9,12 @@ export class EdgeStoreClientAdapter extends UploadClientAdapter {
     throw new Error("Method not implemented.");
   }
 
+  async uploadFiles(
+    formData: FormData
+  ): Promise<Nullish<Array<UploadedImage>>> {
+    throw new Error("Method not implemented.");
+  }
+
   async deleteFile(fileId: string): Promise<void> {
     throw new Error("Method not implemented.");
   }
